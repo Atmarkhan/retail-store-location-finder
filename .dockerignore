@@ -57,7 +57,8 @@ __mocks__/
 
 # TypeScript
 *.tsbuildinfo
-tsconfig.json
+# tsconfig.json - NEEDED for build
+# src/ - NEEDED for build
 
 # Linting
 .eslintrc.js
@@ -72,7 +73,7 @@ docker-compose.yml
 docker-compose.*.yml
 
 # Development files
-src/
+# src/ - NEEDED for build
 examples/
 test-*.ts
 test-*.js
