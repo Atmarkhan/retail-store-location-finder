@@ -6,18 +6,19 @@ const swaggerOptions: swaggerJSDoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Manhattan Distance Challenge API",
+      title:
+        "Technical Interview Task Completed By Atmar Momand - Possible Plots for Retail Store Location closes to All Houses in Neighborhood",
       version: "1.0.0",
       description:
-        "A TypeScript API for finding optimal store locations based on Manhattan distance constraints",
+        " ## 🏗️ What's the problem I want to solve: A retail store chain wants to expand into a new neighborhood. To make the number of clients as large as possible, the new branch should be at a distance of no more than k from all the houses in the neighborhood. A is a matrix of size N x M. It represents the neighborhood as a rectangular grid, in which each cell is an integer 0 (an empty plot) or 1 (a house). The distance between two cells is calculated as minimum number of cell borders that one has to cross to move from the source cell to the target cell. It does not matter whether the cells on the way are empty or occupied but it does not allow for moving through corners. A store can be only built on an empty plot. How many suitable locations are there? For example, given K=2 and matrix A= [[0,0,0,0], [0,0,1,0],[1,0,0,1]], houses are located in cells with coordinates(2,3), (3,1) and (3,4). We can build a new store on two empty plots that are close enough to all houses. The first possible empty plot is located at (3,2). the distance to first house at(2,3) is 2. The distance to second house at (3,1) is 1. The third house at (3,4) is at distance of 2. The second possible empty plot is located(3,3). the distance to the first second and third houses are 1,2 and 1 respectively.I've created a complete TypeScript application with Node.js API for solving the Manhattan distance store location problem. Here's what's included:",
       contact: {
         name: "API Support",
-        url: "https://github.com/Atmarkhan/technical-exercise",
-        email: "support@example.com",
+        url: "https://github.com/Atmarkhan/retail-store-location-finder",
+        email: "atmar.momand97@gmail.com",
       },
       license: {
-        name: "MIT",
-        url: "https://opensource.org/licenses/MIT",
+        name: "UNLICENSE",
+        url: "https://github.com/Atmarkhan/retail-store-location-finder",
       },
     },
     servers: [
@@ -26,7 +27,7 @@ const swaggerOptions: swaggerJSDoc.Options = {
         description: "Development server",
       },
       {
-        url: "https://your-app.run.app",
+        url: "https://retail-store-location-finder-485791977123.europe-west1.run.app/api-docs/",
         description: "Production server (Google Cloud Run)",
       },
     ],
@@ -343,7 +344,8 @@ export function setupSwagger(app: Express): void {
     swaggerUi.setup(swaggerSpec, {
       explorer: true,
       customCss: ".swagger-ui .topbar { display: none }",
-      customSiteTitle: "Manhattan Distance API Documentation",
+      customSiteTitle:
+        "Atmar Momand - Technical Interview Task for BYSIX Company",
     })
   );
 

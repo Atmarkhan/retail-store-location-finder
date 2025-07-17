@@ -92,7 +92,7 @@ Response:
 }
 ```
 
-## Examples
+## Examples -
 
 ### Example 1
 
