@@ -1,0 +1,59 @@
+{
+  "name": "retail-store-location-finder",
+  "version": "1.0.0",
+  "description": "A TypeScript application for finding optimal retail store locations based on Manhattan distance",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test:demo-API": "node api-demo.js",
+    "test:swagger": "node test-swagger.js",
+    "test:public-access": "powershell -ExecutionPolicy Bypass -File test-public-access.ps1",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "docker:build": "docker build -t manhattan-distance-api .",
+    "docker:run": "docker run -p 3000:3000 manhattan-distance-api",
+    "docker:compose": "docker-compose up"
+  },
+  "keywords": [
+    "typescript",
+    "algorithm",
+    "manhattan-distance",
+    "api",
+    "retail",
+    "store-location",
+    "optimization",
+    "geospatial"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@types/supertest": "^2.0.12",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "eslint": "^8.57.1",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
