@@ -1,4 +1,4 @@
-# Manhattan Distance Challenge
+# Project Summary: Finding suitable plots for opening a retail store branch.
 
 A TypeScript application for finding optimal store locations based on Manhattan distance constraints.
 
