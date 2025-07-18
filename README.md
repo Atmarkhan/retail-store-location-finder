@@ -59,8 +59,29 @@ GET /health
 ```bash
 GET /api/examples
 ```
+```CURL
+curl --location 'https://atmarmomandbysixtask-485791977123.europe-west1.run.app/api/examples'
+```
 
 ### Find Store Locations
+
+```CURL
+curl --location 'https://atmarmomandbysixtask-485791977123.europe-west1.run.app/api/store-locations' \
+--header 'Content-Type: application/json' \
+--data '{
+    "k": 1,
+    "matrix": [
+        [
+            0,
+            1
+        ],
+        [
+            0,
+            0
+        ]
+    ]
+}'
+```
 
 ```bash
 POST /api/store-locations
@@ -225,4 +246,4 @@ For large matrices (up to 400×400), the algorithm typically runs in under 100ms
 
 ## License
 
-MIT License
+UNLICENSED
